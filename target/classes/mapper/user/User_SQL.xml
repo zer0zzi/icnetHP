@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<select id="selectUserID" parameterType="HashMap" resultType="HashMap">
+	<![CDATA[
+	SELECT
+	 COUNT(ID) AS RESULT
+	FROM USER_INFO
+	WHERE
+	ID = #{ID}
+	]]>
+</select>
